@@ -4,9 +4,34 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Sankofa+Display&display=swap"
+			rel="stylesheet"
+		/>
+
+		<style>
+			.noto-sans-variable {
+				font-family: 'Noto Sans', sans-serif;
+				font-optical-sizing: auto;
+				font-weight: 400;
+				font-style: normal;
+				font-variation-settings: 'wdth' 100;
+			}
+
+			* {
+				font-family: 'Platypi', sans-serif;
+				box-sizing: border-box;
+				object-fit: cover;
+				object-position: center;
+			}
+		</style>
+
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body data-sveltekit-preload-data="hover" data-theme="lofi">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
